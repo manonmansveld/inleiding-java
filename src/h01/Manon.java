@@ -19,8 +19,8 @@ Voorbeeld 2.1
 import java.awt.*;
         import java.applet.*;
 
-//een klasse met de naam Show van het type Applet
-public class Show extends Applet {
+//een klasse met de naam Manon van het type Applet
+public class Manon extends Applet {
 
     //een (lege) methode die de Applet initialiseert
     public void init() {
@@ -29,7 +29,9 @@ public class Show extends Applet {
     //een methode die de inhoud van het scherm tekent
     public void paint(Graphics g) {
         g.setColor(Color.yellow);
-        g.drawString("Manon", 50, 60 );
+        g.setFont(new Font("Century Gothic", Font.PLAIN, 100));
+        g.drawString("Manon Mansveld", 100, 110 );
+
     }
 
 }
