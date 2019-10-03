@@ -24,13 +24,15 @@ public class Manon extends Applet {
 
     //een (lege) methode die de Applet initialiseert
     public void init() {
-        setBackground(Color.blue);
+        setBackground(Color.white);
     }
     //een methode die de inhoud van het scherm tekent
     public void paint(Graphics g) {
-        g.setColor(Color.yellow);
+        g.setColor(Color.blue);
         g.setFont(new Font("Century Gothic", Font.PLAIN, 100));
-        g.drawString("Manon Mansveld", 100, 110 );
+        g.drawString("Manon", 100, 110 );
+        g.setColor(Color.red);
+        g.drawString("Mansveld", 100, 170 );
 
     }
 
