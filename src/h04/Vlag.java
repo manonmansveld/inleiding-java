@@ -19,7 +19,7 @@ public class Vlag
         g.fillRect(120,140,150,30);
         g.setColor(Color.black);
         g.drawRect(120,80,150,90);
-        g.setColor(Color.blue);
+        g.setColor(Color.black);
 
     }
 }
