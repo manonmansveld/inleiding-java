@@ -1,6 +1,4 @@
 
-//Voorbeeld 4.1
-
 import java.awt.*;
         import java.applet.*;
 
