@@ -1,9 +1,9 @@
-package h04;
+package h05;
 
 import java.awt.*;
         import java.applet.*;
 
-public class Staafdiagram
+public class Staafdiagram2
         extends Applet {
 
     public void init() {
