@@ -1,58 +1,66 @@
 package h05;
 
 import java.awt.*;
-        import java.applet.*;
+import java.applet.*;
 
 public class Staafdiagram2
         extends Applet {
+        int hoogteXas;
+        int gewichtJeroen;
+        int gewichtHans;
+        int gewichtValerie;
+
 
     public void init() {
         setBackground(Color.black);
+        gewichtJeroen = 100;
+        gewichtHans = 80;
+        gewichtValerie = 40;
+        hoogteXas = 240;
     }
-
     public void paint(Graphics g) {
         //body
         g.setColor(Color.white);
-        g.drawRect(100, 100, 800, 600);
+        g.drawRect(90, 60, 200, 200);
 
         //staven
         g.setColor(Color.blue);
-        g.fillRect(150, 500, 200, 200);
+        g.fillRect(132, hoogteXas - gewichtValerie, 40, gewichtValerie);
 
         g.setColor(Color.green);
-        g.fillRect(400, 300, 200, 400);
+        g.fillRect(172, hoogteXas - gewichtHans, 40, gewichtHans);
 
         g.setColor(Color.magenta);
-        g.fillRect(650, 200, 200, 500);
+        g.fillRect(212, hoogteXas - gewichtJeroen, 40, gewichtJeroen);
 
         //lijntjes gewicht
         g.setColor(Color.white);
-        g.drawLine(100,100,80,100);
-        g.drawLine(100,200,80,200);
-        g.drawLine(100,300,80,300);
-        g.drawLine(100,400,80,400);
-        g.drawLine(100,500,80,500);
-        g.drawLine(100,600,80,600);
-        g.drawLine(100,700,80,700);
+        g.drawLine(132, 120, 128, 120);
+        g.drawLine(132, 140, 128, 140);
+        g.drawLine(132, 160, 128, 160);
+        g.drawLine(132, 180, 128, 180);
+        g.drawLine(132, 200, 128, 200);
+        g.drawLine(132, 220, 128, 220);
+        g.drawLine(132, 240, 128, 240);
 
 
         g.setColor(Color.white);
-        g.setFont(new Font("Century Gothic", Font.PLAIN, 20));
+        g.setFont(new Font("Century Gothic", Font.PLAIN, 10));
         g.drawString("Gewicht in KG", 25, 50);
 
         //gewicht
-        g.drawString("120", 25, 100);
-        g.drawString("100", 25, 200);
-        g.drawString("80", 25, 300);
-        g.drawString("60", 25, 400);
-        g.drawString("40", 25, 500);
-        g.drawString("20", 25, 600);
-        g.drawString("0", 25, 700);
+        g.drawString("120", 105, 124);
+        g.drawString("100", 105, 144);
+        g.drawString("80", 113, 164);
+        g.drawString("60", 113, 184);
+        g.drawString("40",113, 204);
+        g.drawString("20", 113, 224);
+        g.drawString("0", 120, 244);
 
         //namen
-        g.drawString("Valerie", 230, 750);
-        g.drawString("Hans", 480, 750);
-        g.drawString("Jeroen", 730, 750);
+        g.drawString("Jeroen", 215, 255);
+        g.drawString("Hans", 175, 255);
+        g.drawString("Valerie", 130, 255);
 
     }
 
