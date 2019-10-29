@@ -18,6 +18,6 @@ public class Getallen extends Applet {
     }
 
     public void paint(Graphics g) {
-        g.drawString("De uitkomst is: " + uitkomst, 20, 20);
+        g.drawString("De uitkomst is: "  + uitkomst, 20, 20);
     }
 }
