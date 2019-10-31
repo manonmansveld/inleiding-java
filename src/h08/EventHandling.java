@@ -24,6 +24,8 @@ public class EventHandling extends Applet {
     class KnopListener implements ActionListener {
         public void actionPerformed( ActionEvent e ) {
             schermtekst = "Ja, deze knop doet wel iets";
+            repaint();
         }
+
     }
 }
