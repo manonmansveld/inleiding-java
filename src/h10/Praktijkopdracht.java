@@ -27,7 +27,7 @@ public class Praktijkopdracht extends Applet {
     }
 
     public void paint(Graphics g) {
-        g.drawString(tekst, 900, 80 );
+        g.drawString("Uw cijfer is: " + tekst, 900, 80 );
 
     }
 
@@ -67,7 +67,7 @@ public class Praktijkopdracht extends Applet {
                     tekst = "Goed";
                     break;
                 default:
-                    tekst = "U hebt een verkeerd nummer ingetikt ..!";
+                    tekst = "Not found!";
                     break;
             }
             repaint();
