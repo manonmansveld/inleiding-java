@@ -21,17 +21,21 @@ public class Opdracht2 extends Applet {
     void tekenMuur(Graphics g){
 
         int x, y;
-
-        for (int rijx = 0; rijx < 5; rijx++) {
-            for (int rijy = 0; rijy < 5; rijy++){
-                x = rijx * 55;
-                y = rijy * 25;
+        g.setColor(Color.red);
 
 
-                g.setColor(Color.red);
+        for (int rijnummer = 1; rijnummer <= 5; rijnummer++) {
+            for (int j = 0; j < 5; j++){
+                int startX;
+                if (rijnummer % 2 == 0) {
+                    startX = 55;
+                } else {
+                    startX = 30;
+                }
+                x = j * 55 + startX;
+                y = rijnummer * 25;
                 g.fillRect(x, y, 50, 20);
             }
-
         }
 
     }
