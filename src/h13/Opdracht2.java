@@ -23,7 +23,6 @@ public class Opdracht2 extends Applet {
         int x, y;
         g.setColor(Color.red);
 
-
         for (int rijnummer = 1; rijnummer <= 5; rijnummer++) {
             for (int j = 0; j < 5; j++){
                 int startX;
